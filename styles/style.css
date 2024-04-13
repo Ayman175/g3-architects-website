@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+}
+
+
+/* share styles */
+
+section {
+    margin-top: 100px;
+}
+
+.description {
+    color: #727272;
+}
+
+/* header styles */
+
+header {
+    padding: 50px 220px;
+    background: rgba(255, 144, 14, 0.10);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+
+}
+
+nav li {
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+nav li a {
+    color: #424242;
+    text-decoration: none;
+}
+
+.brand-container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.brand-title {
+    color: #131313;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+
+.btn-primary {
+    color: #FFF;
+    background: #FF900E;
+    width: 180px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 24px;
+    margin-top: 50px;
+}
+
+header img {
+    width: 100%;
+    margin-top: 70px;
+}
+
+/* main styles */
+
+main {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+/* features styles */
+
+.features-container {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.features-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.features-container img {
+    width: 100%;
+}
+
+.features-content {
+    width: 500px;
+}
+
+.features-title {
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.gray {
+    color: var(--Dark-03, #727272);
+}
+
+.tomato {
+    color: #FF900E;
+}
+
+
+/* features-love-container styles */
+
+.features-love-container {
+    display: flex;
+    gap: 140px;
+}
+
+.desktop-mobile-container {
+    width: 700px;
+}
+
+.features-love-container img {
+    height: 90%;
+    width: 100%;
+    margin-left: 50px;
+}
+
+.love-title {
+    color: var(--Dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+    font-family: "Work Sans";
+}
+
+.love-description {
+    color: var(--Dark-03, #727272);
+    font-family: "Work Sans";
+    margin-top: 24px;
+    margin-bottom: 30px;
+}
+
+
+.card-container {
+    background: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 50px;
+    padding: 30px;
+}
+
+.ten-years-badge {
+    background: #FF900E;
+    border-radius: 8px;
+    width: 290px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.ten-years-badge h2 {
+    color: #FFF;
+    font-size: 65px;
+    font-weight: 700;
+}
+
+.ten-years-badge p {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+/* media responsive */
+
+/* phone responsive */
+
+@media screen and (max-width:576px) {
+
+    nav,
+    .features-container,
+    .features-love-container {
+        flex-direction: column;
+    }
+
+    .features-image {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header {
+        padding: 0px;
+    }
+
+    header h3 {
+        margin-bottom: 10px;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    .card-container {
+        width: 300px;
+    }
+
+    .love-description {
+        width: 375px;
+        padding: 0 10px;
+    }
+
+    .ten-years-badge {
+        position: static;
+        max-width: 290px;
+    }
+
+    .features-love-container img {
+        margin-left: 0;
+    }
+
+    .features-content,
+    .love-title {
+        width: 330px;
+        padding: 3px;
+    }
+
+}
+
+/* pad medium media */
+
+@media screen and (min-width:576px) and (max-width:960px) {
+
+    nav,
+    .features-container,
+    .features-love-container {
+        flex-direction: column;
+    }
+
+    header h3 {
+        margin-bottom: 10px;
+    }
+
+    header img {
+        width: 100%;
+    }
+
+    .features-content {
+        text-align: center;
+    }
+
+
+    .ten-years-badge {
+        position: static;
+        max-width: 290px;
+    }
+
+    .features-love-container img {
+        margin-left: 0;
+    }
+
+}
